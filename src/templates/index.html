@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class = "container">
+    <div class="col-lg-6">
+        <!--<div class = "colorful-text">Hello World, {{name}}</div>-->
+        <div>Hello World, Songhee,Choi</div>
+        <div>Hello World, Charlotte</div>
+    </div>
+    <div class="col-sm-2">
+        {% for article in article_list %}
+        <div>{{article.title}} <span class="badge badge-secondary">{{article.view_count}}</span></div>
+        {% endfor%}
+    </div>
+    <div class="col-sm-2">
+        ICON<i class="fas fa-camera"></i>
+    </div>
+
+</div>
+{% endblock %}
